@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site1.master.cs" Inherits="week_13.site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .auto-style1 {
+            width: 94px;
+        }
+        .auto-style2 {
+            width: 367px;
+        }
+        .auto-style3 {
+            width: 372px;
+        }
+        .auto-style4 {
+            width: 368px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <h1>마스터 페이지 연습</h1>
+        </header>
+        <nav>
+            <asp:Panel ID="Panel1" runat="server" Height="90px" Width="300px">
+                <table>
+                    <tr>
+                        <td class="auto-style1">아이디</td>
+                        <td>
+                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호</td>
+                        <td>
+                            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><asp:CheckBox ID="CheckBox1" runat="server" Text=" 로그인유지" /></td>
+                    </tr>
+                </table>
+            </asp:Panel>
+            
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            
+            <br />
+            <br />
+            <asp:Button ID="Button3" runat="server" Text="로그인" Width="300px" OnClick="Button3_Click" PostBackUrl="~/Login.aspx" />
+            <br />
+            
+            <br />
+
+            <asp:Panel ID="Panel2" runat="server" Height="30px" Width="300px">
+                <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                &nbsp;<asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="로그아웃" PostBackUrl="~/Logout.aspx" />
+                <br />
+                <br />
+            </asp:Panel>
+
+            <br />
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/menu1.aspx">소개</asp:HyperLink>
+            <br />
+            <br />
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/menu2.aspx">오시는길</asp:HyperLink>
+            <br />
+            <br />
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/menu3.aspx">회원정보</asp:HyperLink>
+
+        </nav>
+
+        <article>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <br />기본콘텐츠입니다.
+            </asp:ContentPlaceHolder>
+        </article>
+        <footer>
+            (우) 03039 서울특별시 종로구 필운대로 1길 34 배화여자대학교 TEL : 02-399-0700 FAX : 02-737-8431 <br />
+            COPYRIGHT (C) BEAWHA WOMEN'S UNIVERSITY. ALL RIGHTS RESERVED.
+         </footer>
+    </form>
+</body>
+</html>
