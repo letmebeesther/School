@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<!-- JavaScript 배열 객체의 기능을 보여주기 위한 예제 -->
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta authors="임순범 박희민"/>
+<meta copyright="본 예제는 [HTML5 웹프로그래밍 입문] 교재를 이용한 교육에만 사용할 수 있음"/>
+<title> JavaScript Arrays </title>
+</head>
+<body>
+
+<script type="text/javascript">
+  function print_array(a, name) {
+    document.write("Size of array: " + a.length + "<br/>");
+    for(i=0;i<a.length;i++) {
+      document.write(name + "[" + i + "]: ");
+      if (typeof(a[i]) == "string")
+        document.write("\"" + a[i] + "\" <br/>");
+      else
+        document.write(a[i] + " <br/>");
+    }
+  }
+
+  var arr = new Array("zero", "one", 3, "25" );
+
+  document.write("Original Array: <br/>");
+  print_array(arr, "arr");
+
+  arr.sort();
+  document.write("<br/> After sort: <br/>");
+  print_array(arr, "arr");
+
+  var new_arr = arr.concat(4, "five", 6);
+  document.write("<br/> After concatenation: <br/>");
+  print_array(new_arr, "new_arr");
+
+  var sliced_arr = arr.slice(2, 6);  
+  document.write("<br/> After slice: <br/>");
+  print_array(sliced_arr, "sliced_arr");
+</script>
+
+</body>
+</html>
