@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+		String id = "kingdom";
+		String hobby = "movie";
+	%>
+	
+	포워딩하는 페이지 forwardTest2.jsp입니다.
+	<jsp:forward page="forwardToTest2.jsp">
+		<jsp:param name="id" value="<%=id %>"/>
+		<jsp:param name="hobby" value="<%=hobby %>"/>
+	</jsp:forward>
+</body>
+</html>
