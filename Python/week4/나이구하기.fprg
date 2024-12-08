@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="6302"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-28 04:01:41 &#50724;&#54980;"/>
+        <attribute name="created" value="NjMwMjtERVNLVE9QLU5QUTNSRFM7MjAyMi0wMy0yODswMzozOTo1MCDsmKTtm4Q7MTA4MTM5"/>
+        <attribute name="edited" value="NjMwMjtERVNLVE9QLU5QUTNSRFM7MjAyMi0wMy0yODswNDowMTo0MSDsmKTtm4Q7MTsxMDgyMzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="birthyear" type="Integer" array="False" size=""/>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#47751; &#45380;&#46020;&#50640; &#53468;&#50612;&#45228;&#45208;&#50836;?&quot;" newline="True"/>
+            <input variable="birthyear"/>
+            <assign variable="age" expression="2022-birthyear+1"/>
+            <output expression="&quot;&#45817;&#49888;&#51032; &#45208;&#51060;&#45716; &quot; &amp;age" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

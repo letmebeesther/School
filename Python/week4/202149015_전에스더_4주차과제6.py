@@ -1,0 +1,5 @@
+Q = int(input("퀴즈 점수 : "))
+M = int(input("중간고사 점수 : "))
+F = int(input("기말고사 점수 : "))
+result = Q*(20/100) + M*(30/100) + F*(50/100)
+print(result)
