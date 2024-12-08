@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta authors="임순범 박희민"/>
+<meta copyright="본 예제는 [HTML5 웹프로그래밍 입문] 교재를 이용한 교육에만 사용할 수 있음"/>
+<title> </title>
+</head>
+<body>
+  <h1>자바스크림트 코드안에 html 코드 넣기</h1>
+  <!--<table border="1">-->
+      <script type="text/javascript">
+        /*var book="HTML5 웹프로그래밍";
+          
+        document.write("<tr><td>교재명</td><td>"+book+"</td></tr>");*/
+          
+          //화면 출력하는 내장 함수
+          /*var ans=confirm("스마트IT학과 학생입니까?");
+          document.write("설문에 응답하는 학생은"+ans+"(스마트IT학과)학생입니다.");*/
+          
+          /*var ans=prompt("전공을 입력하시오.", "예)스마트IT");
+          document.write("입력한 전공명은"+ans+"입니다.");*/
+          
+          /*if(200<100)
+              alert("200<100 => false");
+          else
+              alert("200<100 => true");*/
+          
+          var date=new Date();
+          var hour=date.getHours();
+          
+          
+          if(hour<12)
+              alert("오전시간입니다.");
+          
+          if(hour>=12)
+              alert("오후시간입니다.");
+          
+      </script>
+  </table>
+</body>
+</html>
