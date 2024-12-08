@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iframe 활용</title>
+    <style type="text/css">
+        h1{
+            color: crimson;
+            background-color: antiquewhite;
+            width: 800px;   
+        }
+    </style>
+</head>
+
+<body>
+    <h1>iframe + table 활용</h1>
+    <table border="1">
+        <tr>
+            <td rowspan="5">
+                <iframe src="image/cat1.jpeg" width="500" height="500" name="it"></iframe>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <a href="image/cat22.jpg" target="it"><img src="image/cat2.jpeg" width="100" height="100"></a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="image/cat33.jpg" target="it">
+                <img src="image/cat3.jpeg" width="100" height="100"></a>
+            </td>
+        </tr>
+        <tr><td><a href="image/cat44.jpg" target="it"><img src="image/cat4.jpeg" width="100" height="100"></a></td></tr>
+        
+        <tr><td><a href="image/cat55.jpg" target="it"><img src="image/cat5.jpeg" width="100" height="100"></a></td></tr>
+    </table>
+</body>
+</html>

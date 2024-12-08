@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iframe 활용</title>
+    <style type="text/css">
+        h1{
+            color: crimson;
+            background-color: antiquewhite;
+            width: 800px;   
+        }
+    </style>
+</head>
+
+<body>
+    <h1>iframe + table 활용</h1>
+    <table border="1">
+        <tr>
+            <td>
+                <a href="image/dog1.jpeg" target="it">
+                <img src="image/dog1.jpeg" width="300" height="500">
+                </a>
+            </td>
+            <td>
+                <a href="image/dog2.jpeg" target="it">
+                <img src="image/dog2.jpeg" width="300" height="500">
+                </a>
+            </td>
+            <td>
+                <a href="http://www.nate.com" target="it">NATE
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <iframe src="index.html" width="700" height="500" name="it">
+                </iframe>
+            </td>
+        </tr>
+    </table>
+    <figure>
+        <iframe      
+            width="560"
+            height="315" src="https://www.youtube.com/embed/VGY2dxrQyPg" 
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <embed 
+            width="560" 
+            height="315" src="https://www.youtube.com/embed/VGY2dxrQyPg"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </figure>
+    
+    <h1>CSS 문법 기초</h1>
+    
+    <embed 
+        width="560" 
+        height="315" src="https://www.youtube.com/embed/VGY2dxrQyPg" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</body>
+</html>

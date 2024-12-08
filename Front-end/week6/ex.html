@@ -1,0 +1,92 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>선택자와 배경 연습</title>
+    <style>
+			.container {
+				width:500px;
+				padding:10px;
+				border:1px solid #ccc;
+			}
+        .in{
+            font-size: 12pt;
+            color: blue;
+        }
+        p.inn{
+            color: aquamarine;
+            font-weight: bold;
+        }
+        h1,h2{
+            font-size: 25pt;
+        }
+        p strong{
+            font-size: 25pt;
+        }
+        #box{
+            width: 400px;
+            height: 200px;
+            background-color: antiquewhite;
+            text-align: center;
+            line-height: 200px;
+        }
+        body{
+            background-image: url(images/CSS3_L.gif);
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;
+        }
+        a:link{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            font-size: 25pt;
+            text-shadow: 3px 3px 5px green;
+        }
+        h1:after{
+            content: "(주)배화상사"
+        }
+        p:hover{
+            background-color: yellow;
+        }
+        ul li{
+            list-style-type: square;
+        }
+        li.ex1{
+               list-style-type: disc;
+            }
+        li.ex2{
+            list-style-image: url(images/icon.gif);
+        }
+        li.ex3{
+            list-style-image: url(images/tick.png);
+        }
+    </style>
+  </head>
+  <body>
+  <h1><a href="http://www.nate.com">검색엔진 활용하기</a></h1>
+		<div class="container">
+			<h1>최신 <span class="in">웹 디자인</span> 트렌드</h1>
+			<p class="inn">반응형 웹 디자인 - 다양한 화면 크기에 최적화하다</p>
+			<p class="inn">플랫 디자인 - 입체에서 <span class="inn">평면으로</span></p>
+			<p class="inn">풀스크린 배경 - 콘텐츠에 집중</p>
+			<p>원 페이지 <strong>사이트</strong> - 한 페이지에 모든 내용을 담다</p>
+			<p>패럴랙스 스크롤링 - 동적인 효과로 강한 인상을!</p>
+			<p>웹 폰트 - 웹 타이포그래피를 받쳐주는 기술</p>
+			<h2>최신 <span class="in">웹 디자인</span> <strong>트렌드</strong></h2>
+		</div>
+		<br>
+		<div id="box">
+		    전송하기
+		</div>
+		<h2>목록 스타일 연습하기</h2>
+		<ul>
+		    <li>순서있는 목록</li>
+		    <li>순서없는 목록</li>
+		    <li class="ex1">순서있는 목록 : 번호 알파벳 로마숫자</li>
+		    <li class="ex2">순서없는 목록 : 불릿기호 이미지</li>
+		    <li class="ex3">내여쓰기 들여쓰기</li>
+		</ul>
+  </body>
+</html> 
