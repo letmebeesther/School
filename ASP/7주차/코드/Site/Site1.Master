@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="week7.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="background-color : lightblue">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Intro.aspx">쇼핑몰 소개</asp:HyperLink> &nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/my.aspx">내 정보</asp:HyperLink> &nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/list.aspx">제품</asp:HyperLink> &nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/order.aspx">장바구니</asp:HyperLink> &nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label1" runat="server" Text="처음이시죠?"></asp:Label> <br /> <br />
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox> &nbsp
+            <asp:Button ID="Button1" runat="server" Text="콘텐츠페이지로 보내기" OnClick="Button1_Click" /> &nbsp;
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <br />
+                기본 페이지 입니다
+
+
+            </asp:ContentPlaceHolder>
+        </div>
+
+       
+
+    </form>
+</body>
+</html>
