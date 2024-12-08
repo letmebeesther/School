@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>오디오 활용</h1>
+    <!--책에 없는 태그 활용-->
+    <marquee 
+        behavior="alternate" 
+        scrollamount="30" 
+        width="700">
+        HTML5에서 새로 나온 멀티미디어 지원 태그
+    </marquee>
+    
+    <audio 
+       src="media/song1.mp3" 
+       controls loop>
+        audio 요소를 해석하지 못하는 브라우저는 음악이 재생되지 않습니다.
+    </audio>
+    <br>
+    <audio controls>
+        <source src="media/song2.mp3" type="audio/mp3">
+        <source src="media/song.wav" type="audio/wav">
+        <source src="media/song.ogg" type="audio/ogg">
+        audio 요소를 해석하지 못하는 브라우저는 음악이 재생되지 않습니다.
+    </audio>
+    <br>
+    <h1>비디오 활용</h1>
+    <video src="media/media1.mp4" width="650" height="400" controls>
+        video 요소를 해석하지 못하는 브라우저는 영상이 재생되지 않습니다.
+    </video>
+    <h1>iframe 기초 연습</h1>
+    <iframe src="http://www.nate.com" width="600" height="500" name="www">
+        
+    </iframe>
+</body>
+
+</html>
