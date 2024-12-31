@@ -5,7 +5,7 @@ public class NestedForTest_04 {
 	public static void main(String[] args) {
 		for(int i = 2;i<=9;i++) 
 		{
-			System.out.printf("##%3d´Ü ##", i);
+			System.out.printf("##%3d ##", i);
 		}
 		System.out.println("\n");
 		
